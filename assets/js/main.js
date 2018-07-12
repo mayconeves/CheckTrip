@@ -107,4 +107,10 @@ $(document).ready(function () {
         $('#status').html('');
     }
 
+    /**
+     * Preencher a url com o exemplo
+     */
+    $('#copy').on('click', function () {
+        $('.input-url').val($("#url-example").text());
+    })
 });

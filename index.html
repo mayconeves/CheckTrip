@@ -7,6 +7,7 @@
     <title>CheckTrip</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -20,7 +21,8 @@
 
                     <div id="sessionOne" class="fundo-form">
                         <h1 class="text-center"><strong>Insira uma url de um restaurante do site Tripadvisor</strong></h1>
-                        <p class="text-center">Ex: <em>https://www.tripadvisor.com.br/Restaurant_Review-g303628-d4201091-Reviews-Mirai_Japanese_Food-Sao_Jose_Do_Rio_Preto_State_of_Sao_Paulo.html</em></p>
+                        <p class="text-center" id="url-example-p">Ex:<span id="url-example"><em>https://www.tripadvisor.com.br/Restaurant_Review-g303628-d4201091-Reviews-Mirai_Japanese_Food-Sao_Jose_Do_Rio_Preto_State_of_Sao_Paulo.html</em></span></p>
+                        <button id="copy"><i class="far fa-copy"></i></button>
                         <form method="post">
                             <input class="form-control input-url" type="text" name="url" placeholder="Insira aqui sua url .." minlength="10" autocomplete="off" required="required">
                             <button class="btn btn-custom" type="submit" id="btnBuscar" >Buscar</button>
